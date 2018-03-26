@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dbado2DataSet" targetNamespace="http://tempuri.org/dbado2DataSet.xsd" xmlns:mstns="http://tempuri.org/dbado2DataSet.xsd" xmlns="http://tempuri.org/dbado2DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="dbado1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbado1ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.dbado1ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_pro_informationTableAdapter" GeneratorDataComponentClassName="vw_pro_informationTableAdapter" Name="vw_pro_information" UserDataComponentName="vw_pro_informationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbado1ConnectionString (Web.config)" DbObjectName="dbado2.dbo.vw_pro_information" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Pname, ShippingAdd, Odate, Qty, UnitPrice, Discount FROM dbo.vw_pro_information</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Pname" DataSetColumn="Pname" />
+              <Mapping SourceColumn="ShippingAdd" DataSetColumn="ShippingAdd" />
+              <Mapping SourceColumn="Odate" DataSetColumn="Odate" />
+              <Mapping SourceColumn="Qty" DataSetColumn="Qty" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="Discount" DataSetColumn="Discount" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dbado2DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbado2DataSet" msprop:Generator_UserDSName="dbado2DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_pro_information" msprop:Generator_TableClassName="vw_pro_informationDataTable" msprop:Generator_TableVarName="tablevw_pro_information" msprop:Generator_TablePropName="vw_pro_information" msprop:Generator_RowDeletingName="vw_pro_informationRowDeleting" msprop:Generator_RowChangingName="vw_pro_informationRowChanging" msprop:Generator_RowEvHandlerName="vw_pro_informationRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_pro_informationRowDeleted" msprop:Generator_UserTableName="vw_pro_information" msprop:Generator_RowChangedName="vw_pro_informationRowChanged" msprop:Generator_RowEvArgName="vw_pro_informationRowChangeEvent" msprop:Generator_RowClassName="vw_pro_informationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Pname" msprop:Generator_ColumnVarNameInTable="columnPname" msprop:Generator_ColumnPropNameInRow="Pname" msprop:Generator_ColumnPropNameInTable="PnameColumn" msprop:Generator_UserColumnName="Pname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShippingAdd" msprop:Generator_ColumnVarNameInTable="columnShippingAdd" msprop:Generator_ColumnPropNameInRow="ShippingAdd" msprop:Generator_ColumnPropNameInTable="ShippingAddColumn" msprop:Generator_UserColumnName="ShippingAdd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Odate" msprop:Generator_ColumnVarNameInTable="columnOdate" msprop:Generator_ColumnPropNameInRow="Odate" msprop:Generator_ColumnPropNameInTable="OdateColumn" msprop:Generator_UserColumnName="Odate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" msprop:Generator_UserColumnName="Qty" type="xs:double" />
+              <xs:element name="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" msprop:Generator_UserColumnName="UnitPrice" type="xs:decimal" />
+              <xs:element name="Discount" msprop:Generator_ColumnVarNameInTable="columnDiscount" msprop:Generator_ColumnPropNameInRow="Discount" msprop:Generator_ColumnPropNameInTable="DiscountColumn" msprop:Generator_UserColumnName="Discount" type="xs:float" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vw_pro_information" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
